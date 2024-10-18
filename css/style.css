@@ -1,0 +1,88 @@
+h2 {
+    margin-top: 15px;
+    margin-bottom: 10px; 
+}
+h3 {
+    margin-top: 15px;
+    margin-bottom: 10px; 
+}
+h4 {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+ul {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+.information {
+    width: 80%;
+    display: flex;
+    gap: 50px; /* 要素間の間隔を調整 */
+    margin-bottom: 20px; 
+
+}
+
+.form-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between; /* 要素間のスペースを均等にする */
+    gap: 10px; /* 要素間の間隔を調整 */
+}
+.form-container form {
+    flex-direction: column; /* ラベルと入力ボックスを縦に配置 */
+    align-items: center;
+}
+.charts {
+    display: flex; /* Flexboxを使用 */
+    flex-wrap: wrap; /* 子要素が次の行に折り返されるように */
+    justify-content: space-between; /* 余白を均等に分配 */
+    gap: 20px; /* グラフ間のスペース */
+}
+.chart-container {
+    flex: 0 1 calc(50% - 20px); /* 各グラフコンテナを50%幅で表示し、余白を考慮 */
+    box-sizing: border-box; /* パディングとボーダーを含める */
+    max-width: calc(50% - 20px); /* 最大幅を設定 */
+    background-color: #f9f9f9; /* 背景色 */
+    padding: 10px; /* 内側のパディングを調整 */
+    border: 1px solid #ddd; /* 境界線 */
+    border-radius: 8px; /* 角を丸くする */
+    display: flex; /* Flexboxで内側を整える */
+    flex-direction: column; /* 縦方向に配置 */
+    align-items: center; /* 中央揃え */
+    height: 450px;
+}
+
+.chart-wrapper {
+    flex: 1; /* グラフが余分なスペースを占める */
+    max-height: 250px; /* グラフの高さを調整 */
+    width: 100%; /* 幅を100%に設定 */
+}
+.comments-section {
+    width: 100%; /* コメントセクションの幅を100%に */
+    height: 100px;
+    margin-top: 10px; /* グラフとコメントの間にスペースを追加 */
+    padding: 10px; /* コメントセクションのパディングを追加 */
+    background-color: #fff; /* 背景色を設定 */
+    border: 1px solid #ccc; /* 境界線を追加 */
+    border-radius: 4px; /* 角を丸くする */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    box-sizing: border-box; /* パディングとボーダーを含める */
+}
+.comments-section h4 {
+    margin: 0; /* ヘッダーのマージンをリセット */
+}
+#suggestions div {
+    padding: 8px;
+    cursor: pointer;
+}
+#suggestions div:hover {
+    background-color: #f0f0f0;
+}
+/* メディアクエリを追加して小さい画面でのスタイルを調整 */
+@media (max-width: 768px) {
+    .chart-container {
+        flex: 1 1 100%; /* スクリーンが小さいときは100%の幅を占める */
+        max-width: 100%; /* 最大幅を100%に */
+    }
+}
